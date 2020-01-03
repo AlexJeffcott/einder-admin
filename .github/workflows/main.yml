@@ -9,3 +9,6 @@ jobs:
       uses: cypress-io/github-action@v1.16.1
       with:
         record: false
+      env:
+        BASE_URL: http://localhost:3001
+        LOCAL: true
