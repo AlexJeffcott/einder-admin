@@ -1,0 +1,11 @@
+{
+  "specName": "__all",
+  "title": "should go to login page",
+  "suiteName": "Login Page",
+  "testName": "Login Page should go to login page",
+  "testError": "cy.visit() failed trying to load:\n\nWe failed looking for this file at the path:\n\n/Users/ajt/projects/einder-admin/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found",
+  "testCommands": [
+    "visit "
+  ],
+  "screenshot": "should-go-to-login-page-failed.png"
+}

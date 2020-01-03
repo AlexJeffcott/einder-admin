@@ -20,9 +20,7 @@
     "docker:up": "docker-compose up -d --build",
     "docker:up:nobuild": "docker-compose up -d",
     "docker:down": "docker-compose stop",
-    "cy:qa": "CYPRESS_LOCAL=false cypress open",
-    "cy:local": "CYPRESS_LOCAL=true cypress open",
-    "cy:test": "WAIT_ON_TIMEOUT=600000 start-server-and-test docker:up:nobuild http-get://localhost:3001 cy:local"
+    "cy:local": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,7 +47,6 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-router-dom": "^5.1.3",
     "cypress": "^3.8.1",
-    "cypress-failed-log": "^2.5.1",
-    "start-server-and-test": "^1.10.6"
+    "cypress-failed-log": "^2.5.1"
   }
 }
