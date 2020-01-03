@@ -10,7 +10,7 @@ jobs:
       with:
         record: false
         start: npm start
-        wait-on: http://localhost:3001
+        wait-on: http://localhost:3000
       env:
-        BASE_URL: http://localhost:3001
+        baseUrl: http://localhost:3000
         LOCAL: false
