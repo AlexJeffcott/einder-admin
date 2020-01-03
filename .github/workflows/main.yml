@@ -9,7 +9,6 @@ jobs:
       uses: cypress-io/github-action@v1.16.1
       with:
         record: false
-        build: npm run build
         start: npm start
         wait-on: http://localhost:3001
       env:
