@@ -14,4 +14,3 @@ RUN npm install
 
 # start app
 CMD ["npm", "start"]
-#CMD ["npm", "cy:local"]
