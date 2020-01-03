@@ -1,0 +1,83 @@
+@import "../../styleVariables/coldVariables.css";
+
+.primary {
+  margin-bottom: var(--spacer-m);
+  background: var(--clr-primary-main);
+  color: var(--clr-n6);
+}
+
+.primary:hover {
+    background: var(--clr-primary-semidark);
+}
+
+.primary .icon {
+    fill: var(--clr-n6);
+}
+
+.secondary {
+  background: var(--clr-secondary-main);
+  color: var(--clr-n2);
+}
+
+.secondary:hover {
+    background: var(--clr-secondary-semidark);
+}
+
+/*.secondary .icon {*/
+/*    fill: var(--clr-n2);*/
+/*}*/
+
+.circular {
+  --btn-br: var(--rd-l);
+}
+
+.rectangular {
+  --btn-br: var(--rd-m);
+}
+
+.circular.small {
+  width: 4em;
+  height: 4em;
+  /*font-size: 20px;*/
+}
+
+.rectangular.small {
+  min-width:4em;
+  min-height: 1em;
+  font-size: 20px;
+}
+
+.rectangular.medium {
+  min-width:9em;
+  min-height: 2em;
+  font-size: 20px;
+}
+
+.rectangular.large {
+  min-width:15em;
+  min-height: 3em;
+  font-size: 20px;
+}
+
+.text {
+  text-overflow: ellipsis;
+}
+
+.btn {
+  border-radius: var(--btn-br);
+  font-family: var(--font-paragraph-m-family);
+  padding: var(--spacer-m);
+  position: relative;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/*.icon {*/
+/*  top:.55em;*/
+/*  left:.75em;*/
+/*  !*top: .125em;*!*/
+/*  position: relative;*/
+/*}*/

@@ -1,0 +1,85 @@
+html.theme-in-transition,
+html.theme-in-transition *,
+html.theme-in-transition *:before,
+html.theme-in-transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0ms !important;
+}
+
+html[data-theme="light"] {
+    /* Global */
+    --clr-background: #f8f3f1;
+
+    /* Colours */
+    /* Primary */
+    --clr-primary-light: #FFC3CE;
+    --clr-primary-semilight: #FF768E;
+    --clr-primary-main: #FF3A52;
+    --clr-primary-semidark: #EC253E;
+    --clr-primary-dark: #A81B2C;
+    /* Secondary */
+    --clr-secondary-light: #978AA2;
+    --clr-secondary-semilight: #655870;
+    --clr-secondary-main: #3D3048;
+    --clr-secondary-semidark: #291C34;
+    --clr-secondary-dark: #150A20;
+    /* Neutral */
+    --clr-n1: #F8F8F8;
+    --clr-n2: #EEF2F3;
+    --clr-n3: #E0E6E8;
+    --clr-n4: #C5D0D3;
+    --clr-n5: #9FA9AC;
+    --clr-n6: #626C70;
+    --clr-n7: #2F3739;
+
+    /* Border-radii */
+    --rd-s: 2px;
+    --rd-m: 4px;
+
+    /* Typography */
+    /* Header XL */
+    --font-header-xl-family: "Times New Roman", Times, serif;
+    --font-header-l-family: "Times New Roman", Times, serif;
+    --font-header-m-family: "Times New Roman", Times, serif;
+    --font-paragraph-l-family: "Times New Roman", Times, serif;
+    --font-paragraph-m-family: "Times New Roman", Times, serif;
+}
+
+html[data-theme="dark"] {
+    /* Global */
+    --clr-background: #222;
+
+    /* Colours */
+    /* Primary */
+    --clr-primary-light: #C0FFF0;
+    --clr-primary-semilight: #72FFDC;
+    --clr-primary-main: #3AFFB8;
+    --clr-primary-semidark: #1DEAAC;
+    --clr-primary-dark: #18D1A5;
+    /* Secondary */
+    --clr-secondary-light: #B482FF;
+    --clr-secondary-semilight: #8250EB;
+    --clr-secondary-main: #6432CD;
+    --clr-secondary-semidark: #501EB9;
+    --clr-secondary-dark: #35039E;
+    /* Neutral */
+    --clr-n1: #2F3739;
+    --clr-n2: #626C70;
+    --clr-n3: #9FA9AC;
+    --clr-n4: #C5D0D3;
+    --clr-n5: #E0E6E8;
+    --clr-n6: #EEF2F3;
+    --clr-n7: #F8F8F8;
+
+    /* Border-radii */
+    --rd-s: 0;
+    --rd-m: 2px;
+
+    /* Typography */
+    /* Header XL */
+    --font-header-xl-family: 'Archivo Black', sans-serif;
+    --font-header-l-family: 'Archivo Black', sans-serif;
+    --font-header-m-family: 'Archivo Black', sans-serif;
+    --font-paragraph-l-family: 'Archivo Black', sans-serif;
+    --font-paragraph-m-family: 'Archivo Black', sans-serif;
+}

@@ -1,0 +1,12 @@
+@import "styleVariables/coldVariables.css";
+@import "styleVariables/hotVariables.css";
+@import "styleVariables/themes.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: var(--spacer-l);
+  background: var(--clr-background);
+}

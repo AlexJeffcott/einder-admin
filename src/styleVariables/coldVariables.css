@@ -1,0 +1,13 @@
+:root {
+    /* Spacers */
+    --spacer-xs: 4 px;
+    --spacer-s: 8px;
+    --spacer-m: 16px;
+    --spacer-l: 24px;
+    --spacer-xl: 32px;
+
+    /* Breakpoints */
+    --desktop-breakpoint: 1200 px;
+    --tablet-breakpoint: 860px;
+    --mobile-breakpoint: 680px;
+}

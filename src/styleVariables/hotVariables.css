@@ -1,0 +1,53 @@
+:root {
+  /* Global */
+  --clr-background: white;
+
+  /* Colors */
+  /* Primary */
+  --clr-primary-light: #CFFEF6;
+  --clr-primary-semilight: #80FCDE;
+  --clr-primary-main: #00EEC2;
+  --clr-primary-semidark: #04D7B1;
+  --clr-primary-dark: #0D9D8C;
+  /* Secondary */
+  --clr-secondary-light: #E8DAFF;
+  --clr-secondary-semilight: #D0B2FF;
+  --clr-secondary-main: #9F65FF;
+  --clr-secondary-semidark: #7E42DF;
+  --clr-secondary-dark: #6830C2;
+  /* Neutral */
+  --clr-n1: #F8F8F8;
+  --clr-n2: #EEF2F3;
+  --clr-n3: #E0E6E8;
+  --clr-n4: #C5D0D3;
+  --clr-n5: #9FA9AC;
+  --clr-n6: #626C70;
+  --clr-n7: #2F3739;
+
+  /* Typography */
+  /* Header XL */
+  --font-header-xl-family: Arial, sans-serif;
+  --font-header-xl-weight: bold;
+  --font-header-xl-size: 44px;
+  /* Header L */
+  --font-header-l-family: Arial, sans-serif;
+  --font-header-l-weight: bold;
+  --font-header-l-size: 34px;
+  /* Header M */
+  --font-header-m-family: Arial, sans-serif;
+  --font-header-m-weight: bold;
+  --font-header-m-size: 24px;
+  /* Paragraph L */
+  --font-paragraph-l-family: Arial, sans-serif;
+  --font-paragraph-l-weight: normal;
+  --font-paragraph-l-size: 24px;
+  /* Paragraph M */
+  --font-paragraph-m-family: Arial, sans-serif;
+  --font-paragraph-m-weight: normal;
+  --font-paragraph-m-size: 18px;
+
+  /* Border-radii */
+  --rd-s: 4px;
+  --rd-m: 8px;
+  --rd-l: 100%;
+}
