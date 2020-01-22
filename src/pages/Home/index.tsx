@@ -1,50 +1,36 @@
-import React, {FC, useState, useEffect} from 'react'
-import 'normalize.css'
+import React, {FC, Reducer, useReducer, } from 'react'
 import '../../styles.css'
-import { RectangularBtnPrimaryLargeArrow, CircularBtnPrimarySmallArrow, RectangularBtnSecondaryLargeArrow, Layout, Input } from '../../components'
-import applyTheme from '../../utils/applyTheme'
+import HomePage from './HomePage'
+import { State, Action, WrapperProps, defaultGuard } from './types'
 
-const Home: FC = () => {
-    const [theme, setTheme] = useState('default')
+export const initialState = {count: 0};
 
-    useEffect(() => applyTheme(theme), [theme])
-
-    return (
-        <Layout
-            header="CSS Tryout Header"
-            firstCol={{
-                title: 'Buttons',
-                content: (
-                    <>
-                        <RectangularBtnPrimaryLargeArrow
-                            handleOnClick={() => setTheme('light')}
-                            text="set light theme"
-                            name="Set light theme button"
-                            trackingId="set_light"
-                            cyId="set_light_theme"
-                        />
-                        <RectangularBtnSecondaryLargeArrow
-                            handleOnClick={() => setTheme('dark')}
-                            text="set dark theme"
-                            name="Set dark theme button"
-                            trackingId="set_dark"
-                            cyId="set_dark_theme"
-                        />
-                        <CircularBtnPrimarySmallArrow
-                            handleOnClick={() => setTheme('default')}
-                            name="Set default theme button"
-                            trackingId="set_default"
-                            cyId="set_default_theme"
-                        />
-                    </>
-                ),
-            }}
-            secondCol={{
-                title: 'Input',
-                content: <Input id="1" />,
-            }}
-        />
-    )
+const reducer: Reducer<State, Action> = (
+  state = initialState,
+    action,
+): State => {
+  switch (action.type) {
+    case 'increment':
+      return {...state, count: state.count + 1};
+    case 'decrement':
+      return {...state, count: state.count - 1};
+    case 'reset':
+      return initialState;
+    default:
+      return defaultGuard(state, action);
+  }
 }
 
-export default Home
+const HomePageWrapper: FC<WrapperProps> = props => {
+  const [state, dispatch] = useReducer<Reducer<State, Action>>(reducer, initialState)
+
+  const actions = {
+    incrementHomePageCounter: () => dispatch({type: 'increment'}),
+    decrementHomePageCounter: () => dispatch({type: 'decrement'}),
+    resetHomePageCounter: () => dispatch({type: 'reset'})
+  }
+
+  return <HomePage {...state} {...actions} {...props}/>
+}
+
+export default HomePageWrapper

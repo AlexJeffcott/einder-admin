@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/einder-admin.iml" filepath="$PROJECT_DIR$/.idea/einder-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tmc/.idea/tmc.iml" filepath="$PROJECT_DIR$/../tmc/.idea/tmc.iml" />
     </modules>
   </component>
 </project>

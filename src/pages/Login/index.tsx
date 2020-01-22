@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {FC} from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 import {fakeAuth} from '../../utils/auth'
 
-const Login = () => {
+const Login: FC = () => {
   let history = useHistory()
   let location = useLocation()
 
